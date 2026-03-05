@@ -96,16 +96,15 @@ export function CurrentBookHero({ book }: Props) {
         <div className="p-6 sm:p-8 lg:p-10">
           <div className="flex flex-col lg:flex-row gap-6 lg:gap-10">
             {/* Cover image — large and prominent */}
-            <div className="flex-shrink-0 flex justify-center lg:justify-start">
+            <div className="flex-shrink-0 self-start flex justify-center lg:justify-start">
               <div
-                className="relative rounded-xl overflow-hidden shadow-lg"
+                className="relative rounded-xl overflow-hidden shadow-lg inline-block"
                 style={{ width: "200px" }}
               >
                 <img
                   src={book.coverUrl}
                   alt={`Cover of ${book.title}`}
-                  className="w-full h-auto object-cover"
-                  style={{ minHeight: "280px", backgroundColor: "#EDE8DD" }}
+                  className="w-full h-auto block"
                 />
               </div>
             </div>
