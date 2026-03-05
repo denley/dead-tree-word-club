@@ -64,6 +64,7 @@ export function BookCard({ book, index }: Props) {
 
   return (
     <motion.div
+      id={`book-${book.month.toLowerCase()}`}
       className="relative mb-12 lg:mb-16"
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -296,6 +297,7 @@ function TBACard({ book, index }: Props) {
 
   return (
     <motion.div
+      id={`book-${book.month.toLowerCase()}`}
       className="relative mb-12 lg:mb-16"
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}

@@ -2,7 +2,7 @@
  * Book Club 2026 — Data
  * Design: "The Reading Room" — Arts & Crafts / Bookish Warmth
  * All book data, meeting dates, and purchase links
- * Updated: corrected month assignments per revised CSV
+ * Updated: Australian links (.com.au), verified audiobook links
  */
 
 export interface BookMonth {
@@ -78,9 +78,9 @@ export const books: BookMonth[] = [
     meetingVenue: "Mia and Shaun's House",
     meetingVenueConfirmed: true,
     links: {
-      amazon: "https://www.amazon.com/gp/product/B0C4DN4DHN",
-      kindle: "https://www.amazon.com/gp/product/B0C4DN4DHN",
-      audible: "https://www.audible.com/search?keywords=17+Years+Later+JP+Pomare",
+      amazon: "https://www.amazon.com.au/s?k=17+Years+Later+JP+Pomare",
+      kindle: "https://www.amazon.com.au/s?k=17+Years+Later+JP+Pomare&i=digital-text",
+      audible: "https://www.audible.com.au/pd/17-Years-Later-Audiobook/B0D47YR3Z5",
       bookshop: "https://bookshop.org/p/books/17-years-later-a-shocking-crime-thriller-j-p-pomare/92a0270eb2bf58e1",
     },
     spanish: {
@@ -106,16 +106,16 @@ export const books: BookMonth[] = [
     meetingVenue: "Denley and Emma's House",
     meetingVenueConfirmed: true,
     links: {
-      amazon: "https://www.amazon.com/Bookbinder-Novel-Pip-Williams/dp/0593600444",
-      kindle: "https://www.amazon.com/Bookbinder-Novel-Pip-Williams/dp/0593600444",
-      audible: "https://www.audible.com/pd/The-Bookbinder-of-Jericho-Audiobook/B0BT4ZMNWP",
-      bookshop: "https://uk.bookshop.org/p/books/the-bookbinder-of-jericho-from-the-author-of-reese-witherspoon-book-club-pick-the-dictionary-of-lost-words-pip-williams/7599046",
+      amazon: "https://www.amazon.com.au/Bookbinder-Jericho-Pip-Williams/dp/1922806625",
+      kindle: "https://www.amazon.com.au/Bookbinder-Jericho-Pip-Williams-ebook/dp/B0B7QY4C3V",
+      audible: "https://www.audible.com.au/pd/The-Bookbinder-of-Jericho-Audiobook/B0BT4YHTWX",
+      bookshop: "https://bookshop.org/p/books/the-bookbinder-a-novel-pip-williams/5b2d1dd21052668d",
     },
     spanish: {
       available: true,
       title: "La artesana de libros",
       amazon: "https://www.amazon.com/-/es/artesana-libros-Pip-Williams/dp/8419638560",
-      kindle: "https://www.amazon.com/-/es/Pip-Williams-ebook/dp/B0CQLXTBDQ",
+      kindle: "https://www.amazon.com.au/artesana-libros-desaf%C3%ADa-labrarse-Spanish-ebook/dp/B0D1QJPML6",
       audible: "https://www.audible.com/pd/La-artesana-de-libros-Audiobook/B0CZNZ2875",
     },
   },
@@ -138,9 +138,9 @@ export const books: BookMonth[] = [
     meetingVenue: "TBD",
     meetingVenueConfirmed: false,
     links: {
-      amazon: "https://www.amazon.com/Orbital-Samantha-Harvey/dp/0802163629",
-      kindle: "https://www.amazon.com/Orbital-Samantha-Harvey-ebook/dp/B0BZ5Y513V",
-      audible: "https://www.audible.com/pd/Orbital-Audiobook/B0CN1XH312",
+      amazon: "https://www.amazon.com.au/s?k=Orbital+Samantha+Harvey",
+      kindle: "https://www.amazon.com.au/s?k=Orbital+Samantha+Harvey&i=digital-text",
+      audible: "https://www.audible.com.au/pd/Orbital-Audiobook/B0CKC69989",
       bookshop: "https://bookshop.org/a/3546/9780802161543",
     },
     spanish: {
@@ -169,11 +169,10 @@ export const books: BookMonth[] = [
     meetingVenue: "TBD",
     meetingVenueConfirmed: false,
     links: {
-      amazon: "https://www.amazon.com/Lola-Mirror-Novel-Trent-Dalton/dp/0063414740",
-      kindle: "https://www.amazon.com/Lola-Mirror-heartbreaking-award-winning-bestsellers-ebook/dp/B0C6L2WNCN",
-      audible: "https://www.audible.com/pd/Lola-in-the-Mirror-Audiobook/B0CB1LQLDJ",
+      amazon: "https://www.amazon.com.au/s?k=Lola+in+the+Mirror+Trent+Dalton",
+      kindle: "https://www.amazon.com.au/s?k=Lola+in+the+Mirror+Trent+Dalton&i=digital-text",
+      audible: "https://www.audible.com.au/pd/Lola-in-the-Mirror-Audiobook/B0CB1R3XHT",
       bookshop: "https://bookshop.org/p/books/lola-in-the-mirror-a-novel-trent-dalton/9b1daf5d4c36192e",
-      spotify: "https://open.spotify.com/show/3L67slKeJ8hmI7GUKpbY5k",
     },
     spanish: {
       available: true,
@@ -201,17 +200,16 @@ export const books: BookMonth[] = [
     meetingVenue: "TBD",
     meetingVenueConfirmed: false,
     links: {
-      amazon: "https://www.amazon.com/Apeirogon-Novel-Colum-McCann/dp/1400069602",
-      kindle: "https://www.amazon.com/Apeirogon-Novel-Colum-McCann-ebook/dp/B07T3XGLW1",
-      audible: "https://www.audible.com/pd/Apeirogon-Audiobook/0307878058",
+      amazon: "https://www.amazon.com.au/s?k=Apeirogon+Colum+McCann",
+      kindle: "https://www.amazon.com.au/s?k=Apeirogon+Colum+McCann&i=digital-text",
+      audible: "https://www.audible.com.au/pd/Apeirogon-Audiobook/1526617870",
       bookshop: "https://bookshop.org/p/books/apeirogon-a-novel-colum-mccann/7843721?ean=9780812981933",
-      spotify: "https://open.spotify.com/episode/3eAdy30J8XflOVHghDXq9C",
     },
     spanish: {
       available: true,
       title: "Apeirógono",
-      amazon: "https://www.amazon.com/-/es/Apeir%C3%B3gono-Colum-McCann/dp/8432239313",
-      kindle: "https://www.amazon.com/Apeir%C3%B3gono-Biblioteca-Formentor-Spanish-McCann-ebook/dp/B09BKCT8XV",
+      amazon: "https://www.amazon.com/-/es/Apeir%C3%B3gono-Colum-McCann/dp/8432234613",
+      kindle: "https://www.amazon.com/-/es/Colum-McCann-ebook/dp/B08BWGM8WH",
     },
   },
   {
@@ -233,9 +231,9 @@ export const books: BookMonth[] = [
     meetingVenue: "TBD",
     meetingVenueConfirmed: false,
     links: {
-      amazon: "https://www.amazon.com/Three-Wild-Dogs-truth-Memoir/dp/0063426072",
-      kindle: "https://www.amazon.com/Three-Wild-Dogs-Truth-Memoir-ebook/dp/B0D2DJKBM9",
-      audible: "https://www.audible.com/pd/Three-Wild-Dogs-and-the-Truth-Audiobook/B0D3VVRM6K",
+      amazon: "https://www.amazon.com.au/s?k=Three+Wild+Dogs+and+the+Truth+Markus+Zusak",
+      kindle: "https://www.amazon.com.au/s?k=Three+Wild+Dogs+and+the+Truth+Markus+Zusak&i=digital-text",
+      audible: "https://www.audible.com.au/pd/Three-Wild-Dogs-and-the-Truth-Audiobook/B0D3VZL8XY",
       bookshop: "https://bookshop.org/p/books/three-wild-dogs-and-the-truth-a-memoir-markus-zusak/ac0ca3b287a1bbf0",
     },
     spanish: {
@@ -265,11 +263,11 @@ export const books: BookMonth[] = [
     meetingVenue: "TBD",
     meetingVenueConfirmed: false,
     links: {
-      amazon: "https://www.amazon.com/Language-Limbs-Novel-Dylin-Hardcastle/dp/0593852710",
-      kindle: "https://www.amazon.com/Language-Limbs-Novel-Dylin-Hardcastle-ebook/dp/B0CWT27KZT",
-      audible: "https://www.audible.com/pd/A-Language-of-Limbs-Audiobook/B0DG3S441P",
+      amazon: "https://www.amazon.com.au/Language-Limbs-Dylin-Hardcastle/dp/1761269879",
+      kindle: "https://www.amazon.com.au/Language-Limbs-Dylin-Hardcastle-ebook/dp/B0CWT27KZT",
+      audible: "https://www.audible.com.au/pd/A-Language-of-Limbs-Audiobook/B0CZ7LJT91",
       bookshop: "https://bookshop.org/p/books/a-language-of-limbs-a-novel-dylin-hardcastle/fded21d4dba4ad83",
-      spotify: "https://open.spotify.com/show/4B7gCNhXxuzLrvzGMGGBtl",
+      spotify: "https://open.spotify.com/show/1ghTGotAgZEOfVvldTplOc",
     },
     spanish: {
       available: false,
@@ -294,9 +292,9 @@ export const books: BookMonth[] = [
     meetingVenue: "TBD",
     meetingVenueConfirmed: false,
     links: {
-      amazon: "https://www.amazon.com/Limberlost-Robbie-Arnott/dp/1922458767",
-      kindle: "https://www.amazon.com/Limberlost-Robbie-Arnott-ebook/dp/B0B1J2V71T",
-      audible: "https://www.audible.com/pd/Limberlost-Audiobook/B0BFYTNHH2",
+      amazon: "https://www.amazon.com.au/s?k=Limberlost+Robbie+Arnott",
+      kindle: "https://www.amazon.com.au/s?k=Limberlost+Robbie+Arnott&i=digital-text",
+      audible: "https://www.audible.com.au/pd/Limberlost-Audiobook/B0BFYGY3YV",
       bookshop: "https://bookshop.org/p/books/limberlost-robbie-arnott/18614041?ean=9781922458766",
     },
     spanish: {
@@ -324,14 +322,17 @@ export const books: BookMonth[] = [
     meetingVenue: "TBD",
     meetingVenueConfirmed: false,
     links: {
-      audible: "https://www.audible.com/pd/American-Dirt-Oprahs-Book-Club-Audiobook/1250260604",
-      bookshop: "https://bookshop.org/p/books/american-dirt-jeanine-cummins/18479562?ean=9781250209764",
-      spotify: "https://open.spotify.com/show/4czFVRkY8OWy5OkGXVcsbg",
+      amazon: "https://www.amazon.com.au/s?k=American+Dirt+Jeanine+Cummins",
+      kindle: "https://www.amazon.com.au/s?k=American+Dirt+Jeanine+Cummins&i=digital-text",
+      audible: "https://www.audible.com.au/pd/American-Dirt-Audiobook/1472261372",
+      bookshop: "https://bookshop.org/p/books/american-dirt-oprah-s-book-club-a-novel-jeanine-cummins/46dc7b1f599ee417",
     },
     spanish: {
       available: true,
       title: "Tierra americana",
-      audible: "https://www.audible.com/pd/Tierra-Americana-American-Dirt-Audiobook/8466667989",
+      amazon: "https://www.amazon.com/Tierra-americana-American-Ediciones-Spanish/dp/8466667423",
+      kindle: "https://www.amazon.com/Tierra-americana-American-Dirt-Spanish-ebook/dp/B084R79VY4",
+      audible: "https://www.audible.com.au/pd/Tierra-Americana-American-Dirt-Audiobook/8466667431",
     },
   },
   {
@@ -353,17 +354,16 @@ export const books: BookMonth[] = [
     meetingVenue: "TBD",
     meetingVenueConfirmed: false,
     links: {
-      amazon: "https://www.amazon.com/Hamnet-Maggie-OFarrell/dp/0525657606",
-      kindle: "https://www.amazon.com/Hamnet-Maggie-OFarrell-ebook/dp/B07ZN51NL3",
-      audible: "https://www.audible.com/pd/Hamnet-Audiobook/0593212142",
+      amazon: "https://www.amazon.com.au/s?k=Hamnet+Maggie+O%27Farrell",
+      kindle: "https://www.amazon.com.au/s?k=Hamnet+Maggie+O%27Farrell&i=digital-text",
+      audible: "https://www.audible.com.au/pd/Hamnet-Audiobook/0593212142",
       bookshop: "https://bookshop.org/p/books/hamnet-maggie-o-farrell/d8af232bf0b72169",
-      spotify: "https://open.spotify.com/show/2aa1OqdCyQmyTLcEC761bz",
     },
     spanish: {
       available: true,
       title: "Hamnet",
-      amazon: "https://www.amazon.com/Hamnet-Libros-del-Asteroide-Spanish/dp/8417977589",
-      kindle: "https://www.amazon.com/Hamnet-Libros-del-Asteroide-Spanish-ebook/dp/B08VC47CK3",
+      amazon: "https://www.amazon.com.au/Hamnet-250-Maggie-OFarrell/dp/8417977589",
+      kindle: "https://www.amazon.com.au/Hamnet-Libros-del-Asteroide-Spanish-ebook/dp/B08VC47CK3",
       audible: "https://www.audible.com/es_US/pd/Hamnet-Audiolibro/B0D1BL2NVB",
     },
   },
@@ -386,16 +386,17 @@ export const books: BookMonth[] = [
     meetingVenue: "TBD",
     meetingVenueConfirmed: false,
     links: {
-      amazon: "https://www.amazon.com/Wind-Knows-My-Name-Novel/dp/0593598121",
-      audible: "https://www.audible.com/pd/The-Wind-Knows-My-Name-A-Novel-Audiobook/B0BJ5XG4BQ",
-      bookshop: "https://bookshop.org/p/books/the-wind-knows-my-name-isabel-allende/18973949?ean=9780593598108",
-      spotify: "https://open.spotify.com/show/44vni3erBn2E67SYdhj7SI",
+      amazon: "https://www.amazon.com.au/s?k=The+Wind+Knows+My+Name+Isabel+Allende",
+      kindle: "https://www.amazon.com.au/s?k=The+Wind+Knows+My+Name+Isabel+Allende&i=digital-text",
+      audible: "https://www.audible.com.au/pd/The-Wind-Knows-My-Name-Audiobook/B0BY3HWZ42",
+      bookshop: "https://bookshop.org/p/books/the-wind-knows-my-name-a-novel-isabel-allende/8ef5622ce600704a",
     },
     spanish: {
       available: true,
       title: "El viento conoce mi nombre",
-      amazon: "https://www.amazon.com/-/es/viento-conoce-nombre-Knows-Spanish/dp/1644738317",
-      audible: "https://www.audible.com/pd/El-viento-conoce-mi-nombre-The-Wind-Knows-My-Name-Audiobook/B0C5RY5TKG",
+      amazon: "https://www.amazon.com/El-viento-conoce-mi-nombre/dp/8466374612",
+      kindle: "https://www.amazon.com/-/es/Isabel-Allende-ebook/dp/B0C69LX2RQ",
+      audible: "https://www.audible.com.au/pd/El-viento-conoce-mi-nombre-The-Wind-Knows-My-Name-Audiobook/B0C5RX5VL5",
     },
   },
   {
@@ -448,21 +449,19 @@ export function getBookStatus(
   const now = new Date();
   const currentMonth = now.getMonth();
   const currentYear = now.getFullYear();
-
   if (currentYear > 2026) return "completed";
   if (currentYear < 2026) return "upcoming";
-
   if (book.monthIndex < currentMonth) return "completed";
   if (book.monthIndex === currentMonth) return "current";
   return "upcoming";
 }
 
-export function getDaysUntilMeeting(book: BookMonth): number | null {
-  const meetingDate = parseDate(book.meetingDate);
-  if (!meetingDate) return null;
+export function getDaysUntilMeeting(dateStr: string): number | null {
+  const d = parseDate(dateStr);
+  if (!d) return null;
   const now = new Date();
   now.setHours(0, 0, 0, 0);
-  meetingDate.setHours(0, 0, 0, 0);
-  const diff = meetingDate.getTime() - now.getTime();
+  d.setHours(0, 0, 0, 0);
+  const diff = d.getTime() - now.getTime();
   return Math.ceil(diff / (1000 * 60 * 60 * 24));
 }

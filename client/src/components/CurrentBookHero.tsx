@@ -27,7 +27,7 @@ interface Props {
 
 export function CurrentBookHero({ book }: Props) {
   const [showSpanish, setShowSpanish] = useState(false);
-  const daysUntil = getDaysUntilMeeting(book);
+  const daysUntil = getDaysUntilMeeting(book.meetingDate);
   const isPast = daysUntil !== null && daysUntil < 0;
   const isToday = daysUntil === 0;
 

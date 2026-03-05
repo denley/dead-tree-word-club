@@ -13,7 +13,7 @@ interface Props {
 }
 
 export function NextMeeting({ book }: Props) {
-  const daysUntil = getDaysUntilMeeting(book);
+  const daysUntil = getDaysUntilMeeting(book.meetingDate);
   const isPast = daysUntil !== null && daysUntil < 0;
   const isToday = daysUntil === 0;
 

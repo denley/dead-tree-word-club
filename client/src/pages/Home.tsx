@@ -107,14 +107,14 @@ export default function Home() {
         <YearProgress books={allBooks} />
       </div>
 
-      {/* Divider */}
-      <div className="flex justify-center py-4">
-        <img
-          src={ASSET_URLS.divider}
-          alt=""
-          className="w-64 sm:w-80 opacity-70"
-          loading="lazy"
-        />
+      {/* Decorative Divider */}
+      <div className="flex items-center justify-center py-8 gap-4">
+        <div className="h-px flex-1 max-w-24" style={{ background: 'linear-gradient(to right, transparent, #C4B99A)' }} />
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" className="opacity-60">
+          <path d="M20 5 L25 15 L35 15 L27 22 L30 33 L20 27 L10 33 L13 22 L5 15 L15 15 Z" stroke="#8B7E70" strokeWidth="1" fill="none" />
+          <circle cx="20" cy="20" r="3" fill="#C4B99A" />
+        </svg>
+        <div className="h-px flex-1 max-w-24" style={{ background: 'linear-gradient(to left, transparent, #C4B99A)' }} />
       </div>
 
       {/* Book List — all months including current */}
