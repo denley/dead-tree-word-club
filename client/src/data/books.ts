@@ -82,6 +82,7 @@ export const books: BookMonth[] = [
       kindle: "https://www.amazon.com.au/s?k=17+Years+Later+JP+Pomare&i=digital-text",
       audible: "https://www.audible.com.au/pd/17-Years-Later-Audiobook/B0D47YR3Z5",
       bookshop: "https://bookshop.org/p/books/17-years-later-a-shocking-crime-thriller-j-p-pomare/92a0270eb2bf58e1",
+      spotify: "https://open.spotify.com/search/17%20Years%20Later%20JP%20Pomare%20audiobook",
     },
     spanish: {
       available: false,
@@ -110,6 +111,7 @@ export const books: BookMonth[] = [
       kindle: "https://www.amazon.com.au/Bookbinder-Jericho-Pip-Williams-ebook/dp/B0B7QY4C3V",
       audible: "https://www.audible.com.au/pd/The-Bookbinder-of-Jericho-Audiobook/B0BT4YHTWX",
       bookshop: "https://bookshop.org/p/books/the-bookbinder-a-novel-pip-williams/5b2d1dd21052668d",
+      spotify: "https://open.spotify.com/search/The%20Bookbinder%20of%20Jericho%20Pip%20Williams%20audiobook",
     },
     spanish: {
       available: true,
@@ -142,6 +144,7 @@ export const books: BookMonth[] = [
       kindle: "https://www.amazon.com.au/s?k=Orbital+Samantha+Harvey&i=digital-text",
       audible: "https://www.audible.com.au/pd/Orbital-Audiobook/B0CKC69989",
       bookshop: "https://bookshop.org/a/3546/9780802161543",
+      spotify: "https://open.spotify.com/search/Orbital%20Samantha%20Harvey%20audiobook",
     },
     spanish: {
       available: true,
@@ -173,6 +176,7 @@ export const books: BookMonth[] = [
       kindle: "https://www.amazon.com.au/s?k=Lola+in+the+Mirror+Trent+Dalton&i=digital-text",
       audible: "https://www.audible.com.au/pd/Lola-in-the-Mirror-Audiobook/B0CB1R3XHT",
       bookshop: "https://bookshop.org/p/books/lola-in-the-mirror-a-novel-trent-dalton/9b1daf5d4c36192e",
+      spotify: "https://open.spotify.com/search/Lola%20in%20the%20Mirror%20Trent%20Dalton%20audiobook",
     },
     spanish: {
       available: true,
@@ -204,6 +208,7 @@ export const books: BookMonth[] = [
       kindle: "https://www.amazon.com.au/s?k=Apeirogon+Colum+McCann&i=digital-text",
       audible: "https://www.audible.com.au/pd/Apeirogon-Audiobook/1526617870",
       bookshop: "https://bookshop.org/p/books/apeirogon-a-novel-colum-mccann/7843721?ean=9780812981933",
+      spotify: "https://open.spotify.com/search/Apeirogon%20Colum%20McCann%20audiobook",
     },
     spanish: {
       available: true,
@@ -235,6 +240,7 @@ export const books: BookMonth[] = [
       kindle: "https://www.amazon.com.au/s?k=Three+Wild+Dogs+and+the+Truth+Markus+Zusak&i=digital-text",
       audible: "https://www.audible.com.au/pd/Three-Wild-Dogs-and-the-Truth-Audiobook/B0D3VZL8XY",
       bookshop: "https://bookshop.org/p/books/three-wild-dogs-and-the-truth-a-memoir-markus-zusak/ac0ca3b287a1bbf0",
+      spotify: "https://open.spotify.com/search/Three%20Wild%20Dogs%20and%20the%20Truth%20Markus%20Zusak%20audiobook",
     },
     spanish: {
       available: true,
@@ -267,7 +273,7 @@ export const books: BookMonth[] = [
       kindle: "https://www.amazon.com.au/Language-Limbs-Dylin-Hardcastle-ebook/dp/B0CWT27KZT",
       audible: "https://www.audible.com.au/pd/A-Language-of-Limbs-Audiobook/B0CZ7LJT91",
       bookshop: "https://bookshop.org/p/books/a-language-of-limbs-a-novel-dylin-hardcastle/fded21d4dba4ad83",
-      spotify: "https://open.spotify.com/show/1ghTGotAgZEOfVvldTplOc",
+      spotify: "https://open.spotify.com/search/A%20Language%20of%20Limbs%20Dylin%20Hardcastle%20audiobook",
     },
     spanish: {
       available: false,
@@ -296,6 +302,7 @@ export const books: BookMonth[] = [
       kindle: "https://www.amazon.com.au/s?k=Limberlost+Robbie+Arnott&i=digital-text",
       audible: "https://www.audible.com.au/pd/Limberlost-Audiobook/B0BFYGY3YV",
       bookshop: "https://bookshop.org/p/books/limberlost-robbie-arnott/18614041?ean=9781922458766",
+      spotify: "https://open.spotify.com/search/Limberlost%20Robbie%20Arnott%20audiobook",
     },
     spanish: {
       available: true,
@@ -326,6 +333,7 @@ export const books: BookMonth[] = [
       kindle: "https://www.amazon.com.au/s?k=American+Dirt+Jeanine+Cummins&i=digital-text",
       audible: "https://www.audible.com.au/pd/American-Dirt-Audiobook/1472261372",
       bookshop: "https://bookshop.org/p/books/american-dirt-oprah-s-book-club-a-novel-jeanine-cummins/46dc7b1f599ee417",
+      spotify: "https://open.spotify.com/search/American%20Dirt%20Jeanine%20Cummins%20audiobook",
     },
     spanish: {
       available: true,
@@ -358,6 +366,7 @@ export const books: BookMonth[] = [
       kindle: "https://www.amazon.com.au/s?k=Hamnet+Maggie+O%27Farrell&i=digital-text",
       audible: "https://www.audible.com.au/pd/Hamnet-Audiobook/0593212142",
       bookshop: "https://bookshop.org/p/books/hamnet-maggie-o-farrell/d8af232bf0b72169",
+      spotify: "https://open.spotify.com/search/Hamnet%20Maggie%20O%27Farrell%20audiobook",
     },
     spanish: {
       available: true,
@@ -390,6 +399,7 @@ export const books: BookMonth[] = [
       kindle: "https://www.amazon.com.au/s?k=The+Wind+Knows+My+Name+Isabel+Allende&i=digital-text",
       audible: "https://www.audible.com.au/pd/The-Wind-Knows-My-Name-Audiobook/B0BY3HWZ42",
       bookshop: "https://bookshop.org/p/books/the-wind-knows-my-name-a-novel-isabel-allende/8ef5622ce600704a",
+      spotify: "https://open.spotify.com/search/The%20Wind%20Knows%20My%20Name%20Isabel%20Allende%20audiobook",
     },
     spanish: {
       available: true,
