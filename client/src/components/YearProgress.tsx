@@ -1,8 +1,9 @@
 /*
- * YearProgress — Book Club 2026
+ * YearProgress — Dead Tree Word Club 2026
  * Horizontal progress bar showing the year's reading journey.
  * Completed months filled in forest green, current in amber, upcoming in muted.
  * TBA months shown with dashed outline.
+ * Month labels are clickable links to the corresponding book in the timeline.
  */
 
 import { BookMonth, getBookStatus } from "@/data/books";
@@ -16,6 +17,15 @@ export function YearProgress({ books }: Props) {
   const completedCount = books.filter((b) => getBookStatus(b) === "completed").length;
   const totalBooks = books.filter((b) => !b.isTBA).length;
   const progress = totalBooks > 0 ? (completedCount / totalBooks) * 100 : 0;
+
+  const handleMonthClick = (month: string) => {
+    const el = document.getElementById(`book-${month.toLowerCase()}`);
+    if (el) {
+      const offset = 80; // account for sticky nav
+      const top = el.getBoundingClientRect().top + window.scrollY - offset;
+      window.scrollTo({ top, behavior: "smooth" });
+    }
+  };
 
   return (
     <motion.section
@@ -50,7 +60,7 @@ export function YearProgress({ books }: Props) {
           />
         </div>
 
-        {/* Month dots */}
+        {/* Month dots — clickable links to timeline sections */}
         <div className="flex justify-between mt-4">
           {books.map((book) => {
             const status = getBookStatus(book);
@@ -66,9 +76,14 @@ export function YearProgress({ books }: Props) {
               status === "current" ? "#2D4A3E" : "#8B7E70";
 
             return (
-              <div key={book.month} className="flex flex-col items-center gap-1.5">
+              <button
+                key={book.month}
+                className="flex flex-col items-center gap-1.5 group cursor-pointer bg-transparent border-none p-0"
+                onClick={() => handleMonthClick(book.month)}
+                title={`Jump to ${book.month}: ${book.title}`}
+              >
                 <div
-                  className="w-3 h-3 rounded-full transition-colors"
+                  className="w-3 h-3 rounded-full transition-all group-hover:scale-125"
                   style={{
                     backgroundColor: dotColor,
                     boxShadow: status === "current" ? "0 0 0 3px rgba(212,168,83,0.3)" : "none",
@@ -76,7 +91,7 @@ export function YearProgress({ books }: Props) {
                   }}
                 />
                 <span
-                  className="font-ui text-[10px] sm:text-xs"
+                  className="font-ui text-[10px] sm:text-xs transition-colors group-hover:underline"
                   style={{
                     color: textColor,
                     fontWeight: status === "current" ? 600 : 400,
@@ -85,7 +100,7 @@ export function YearProgress({ books }: Props) {
                 >
                   {book.month.slice(0, 3)}
                 </span>
-              </div>
+              </button>
             );
           })}
         </div>
