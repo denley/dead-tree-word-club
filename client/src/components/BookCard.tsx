@@ -3,6 +3,7 @@
  * Each month's book displayed as an editorial card with cover, blurb, links.
  * Alternating layout (cover left/right) on desktop. Timeline dot in center.
  * Design: warm parchment card, forest green accents, sienna highlights.
+ * Includes Spotify audiobook links where available.
  */
 
 import { useState } from "react";
@@ -20,6 +21,7 @@ import {
   Library,
   Check,
   Clock,
+  Music,
 } from "lucide-react";
 
 interface Props {
@@ -238,6 +240,9 @@ export function BookCard({ book, index }: Props) {
                   {book.links.audible && (
                     <LinkPill href={book.links.audible} icon={<Headphones size={12} />} label="Audible" />
                   )}
+                  {book.links.spotify && (
+                    <LinkPill href={book.links.spotify} icon={<Music size={12} />} label="Spotify" />
+                  )}
                   {book.links.bookshop && (
                     <LinkPill href={book.links.bookshop} icon={<ShoppingCart size={12} />} label="Bookshop.org" />
                   )}
@@ -329,7 +334,7 @@ function TBACard({ book, index }: Props) {
               To be announced
             </p>
             <p className="font-body text-sm mt-1" style={{ color: "#A89F91" }}>
-              Check back for the November book selection
+              Check back for the {book.month} book selection
             </p>
             <div className="font-ui text-xs mt-4" style={{ color: "#A89F91" }}>
               <span className="flex items-center justify-center gap-1.5">

@@ -2,6 +2,7 @@
  * Book Club 2026 — Data
  * Design: "The Reading Room" — Arts & Crafts / Bookish Warmth
  * All book data, meeting dates, and purchase links
+ * Updated: corrected month assignments per revised CSV
  */
 
 export interface BookMonth {
@@ -24,6 +25,7 @@ export interface BookMonth {
     kindle?: string;
     audible?: string;
     bookshop?: string;
+    spotify?: string;
   };
   spanish: {
     available: boolean;
@@ -60,6 +62,34 @@ export const books: BookMonth[] = [
   {
     month: "January",
     monthIndex: 0,
+    title: "17 Years Later",
+    author: "JP Pomare",
+    authorBio:
+      "J. P. Pomare is a New Zealand author who lives in Melbourne, Australia. He is the author of critically acclaimed and best-selling novels including In The Clearing (adapted as The Clearing by Disney) and The Last Guests.",
+    blurb:
+      "The violent slaughter of the wealthy Primrose family while they slept shocked the nation of New Zealand and scarred the small idyllic rural town of Cambridge forever. All of the evidence pointed to their young live-in chef, Bill Ruatara, who was swiftly charged with murder and brought to justice. Seventeen years later, prison psychologist TK Phillips is fighting for an appeal. He is convinced Bill did not receive a fair trial. When celebrity true-crime podcaster Sloane Abbott takes a sudden interest, it's not long before she uncovers new evidence that could set fire to the prosecution's case.",
+    coverUrl:
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663325128704/YnsM6thAYWMyhpiR6RdVin/17-years-later-cover_9034501c.jpeg",
+    isbn: "9780733649639",
+    pickupDate: "31/12/2025",
+    returnDate: "04/02/2026",
+    meetingDate: "01/02/2026",
+    meetingDateConfirmed: true,
+    meetingVenue: "Mia and Shaun's House",
+    meetingVenueConfirmed: true,
+    links: {
+      amazon: "https://www.amazon.com/gp/product/B0C4DN4DHN",
+      kindle: "https://www.amazon.com/gp/product/B0C4DN4DHN",
+      audible: "https://www.audible.com/search?keywords=17+Years+Later+JP+Pomare",
+      bookshop: "https://bookshop.org/p/books/17-years-later-a-shocking-crime-thriller-j-p-pomare/92a0270eb2bf58e1",
+    },
+    spanish: {
+      available: false,
+    },
+  },
+  {
+    month: "February",
+    monthIndex: 1,
     title: "The Bookbinder of Jericho",
     author: "Pip Williams",
     authorBio:
@@ -70,7 +100,7 @@ export const books: BookMonth[] = [
       "https://files.manuscdn.com/user_upload_by_module/session_file/310519663325128704/bAcBtpzYQFzjYyJu.jpg",
     isbn: "9781529921304",
     pickupDate: "30/01/2026",
-    returnDate: "13/02/2026",
+    returnDate: "13/03/2026",
     meetingDate: "28/02/2026",
     meetingDateConfirmed: true,
     meetingVenue: "Denley and Emma's House",
@@ -90,8 +120,8 @@ export const books: BookMonth[] = [
     },
   },
   {
-    month: "February",
-    monthIndex: 1,
+    month: "March",
+    monthIndex: 2,
     title: "Orbital",
     author: "Samantha Harvey",
     authorBio:
@@ -102,8 +132,8 @@ export const books: BookMonth[] = [
       "https://files.manuscdn.com/user_upload_by_module/session_file/310519663325128704/YxVLqZNoWCpJwSHK.webp",
     isbn: "9780802163622",
     pickupDate: "27/02/2026",
-    returnDate: "04/03/2026",
-    meetingDate: getLastSaturday(2026, 1),
+    returnDate: "10/04/2026",
+    meetingDate: getLastSaturday(2026, 2),
     meetingDateConfirmed: false,
     meetingVenue: "TBD",
     meetingVenueConfirmed: false,
@@ -121,8 +151,8 @@ export const books: BookMonth[] = [
     },
   },
   {
-    month: "March",
-    monthIndex: 2,
+    month: "April",
+    monthIndex: 3,
     title: "Lola in the Mirror",
     author: "Trent Dalton",
     authorBio:
@@ -133,8 +163,8 @@ export const books: BookMonth[] = [
       "https://d2xsxph8kpxj0f.cloudfront.net/310519663325128704/YnsM6thAYWMyhpiR6RdVin/lola-cover_d3fc790b.jpg",
     isbn: "9781460713327",
     pickupDate: "27/03/2026",
-    returnDate: "09/04/2026",
-    meetingDate: getLastSaturday(2026, 2),
+    returnDate: "05/08/2026",
+    meetingDate: getLastSaturday(2026, 3),
     meetingDateConfirmed: false,
     meetingVenue: "TBD",
     meetingVenueConfirmed: false,
@@ -143,14 +173,18 @@ export const books: BookMonth[] = [
       kindle: "https://www.amazon.com/Lola-Mirror-heartbreaking-award-winning-bestsellers-ebook/dp/B0C6L2WNCN",
       audible: "https://www.audible.com/pd/Lola-in-the-Mirror-Audiobook/B0CB1LQLDJ",
       bookshop: "https://bookshop.org/p/books/lola-in-the-mirror-a-novel-trent-dalton/9b1daf5d4c36192e",
+      spotify: "https://open.spotify.com/show/3L67slKeJ8hmI7GUKpbY5k",
     },
     spanish: {
-      available: false,
+      available: true,
+      title: "Lola en el espejo",
+      amazon: "https://www.amazon.com/-/es/Lola-en-espejo-Trent-Dalton/dp/8410641577",
+      kindle: "https://www.amazon.com/Lola-espejo-Spanish-Trent-Dalton-ebook/dp/B0F4Y6SH1W",
     },
   },
   {
-    month: "April",
-    monthIndex: 3,
+    month: "May",
+    monthIndex: 4,
     title: "Apeirogon",
     author: "Colum McCann",
     authorBio:
@@ -161,8 +195,8 @@ export const books: BookMonth[] = [
       "https://files.manuscdn.com/user_upload_by_module/session_file/310519663325128704/TceEvCavhsAMvwop.webp",
     isbn: "9780812981933",
     pickupDate: "24/04/2026",
-    returnDate: "05/05/2026",
-    meetingDate: getLastSaturday(2026, 3),
+    returnDate: "05/06/2026",
+    meetingDate: getLastSaturday(2026, 4),
     meetingDateConfirmed: false,
     meetingVenue: "TBD",
     meetingVenueConfirmed: false,
@@ -171,6 +205,7 @@ export const books: BookMonth[] = [
       kindle: "https://www.amazon.com/Apeirogon-Novel-Colum-McCann-ebook/dp/B07T3XGLW1",
       audible: "https://www.audible.com/pd/Apeirogon-Audiobook/0307878058",
       bookshop: "https://bookshop.org/p/books/apeirogon-a-novel-colum-mccann/7843721?ean=9780812981933",
+      spotify: "https://open.spotify.com/episode/3eAdy30J8XflOVHghDXq9C",
     },
     spanish: {
       available: true,
@@ -180,8 +215,8 @@ export const books: BookMonth[] = [
     },
   },
   {
-    month: "May",
-    monthIndex: 4,
+    month: "June",
+    monthIndex: 5,
     title: "Three Wild Dogs and the Truth",
     author: "Markus Zusak",
     authorBio:
@@ -192,8 +227,8 @@ export const books: BookMonth[] = [
       "https://d2xsxph8kpxj0f.cloudfront.net/310519663325128704/YnsM6thAYWMyhpiR6RdVin/three-wild-dogs-cover_0bc29186.jpg",
     isbn: "9780063426078",
     pickupDate: "29/05/2026",
-    returnDate: "10/06/2026",
-    meetingDate: getLastSaturday(2026, 4),
+    returnDate: "10/07/2026",
+    meetingDate: getLastSaturday(2026, 5),
     meetingDateConfirmed: false,
     meetingVenue: "TBD",
     meetingVenueConfirmed: false,
@@ -212,8 +247,8 @@ export const books: BookMonth[] = [
     },
   },
   {
-    month: "June",
-    monthIndex: 5,
+    month: "July",
+    monthIndex: 6,
     title: "A Language of Limbs",
     author: "Dylin Hardcastle",
     authorBio:
@@ -224,8 +259,8 @@ export const books: BookMonth[] = [
       "https://files.manuscdn.com/user_upload_by_module/session_file/310519663325128704/KtEwetaIjozIHcRQ.webp",
     isbn: "9780593852712",
     pickupDate: "26/06/2026",
-    returnDate: "03/07/2026",
-    meetingDate: getLastSaturday(2026, 5),
+    returnDate: "07/08/2026",
+    meetingDate: getLastSaturday(2026, 6),
     meetingDateConfirmed: false,
     meetingVenue: "TBD",
     meetingVenueConfirmed: false,
@@ -234,14 +269,15 @@ export const books: BookMonth[] = [
       kindle: "https://www.amazon.com/Language-Limbs-Novel-Dylin-Hardcastle-ebook/dp/B0CWT27KZT",
       audible: "https://www.audible.com/pd/A-Language-of-Limbs-Audiobook/B0DG3S441P",
       bookshop: "https://bookshop.org/p/books/a-language-of-limbs-a-novel-dylin-hardcastle/fded21d4dba4ad83",
+      spotify: "https://open.spotify.com/show/4B7gCNhXxuzLrvzGMGGBtl",
     },
     spanish: {
       available: false,
     },
   },
   {
-    month: "July",
-    monthIndex: 6,
+    month: "August",
+    monthIndex: 7,
     title: "Limberlost",
     author: "Robbie Arnott",
     authorBio:
@@ -252,8 +288,8 @@ export const books: BookMonth[] = [
       "https://d2xsxph8kpxj0f.cloudfront.net/310519663325128704/YnsM6thAYWMyhpiR6RdVin/limberlost-cover_e78235de.jpg",
     isbn: "9781922458766",
     pickupDate: "31/07/2026",
-    returnDate: "18/08/2026",
-    meetingDate: getLastSaturday(2026, 6),
+    returnDate: "11/09/2026",
+    meetingDate: getLastSaturday(2026, 7),
     meetingDateConfirmed: false,
     meetingVenue: "TBD",
     meetingVenueConfirmed: false,
@@ -270,8 +306,8 @@ export const books: BookMonth[] = [
     },
   },
   {
-    month: "August",
-    monthIndex: 7,
+    month: "September",
+    monthIndex: 8,
     title: "American Dirt",
     author: "Jeanine Cummins",
     authorBio:
@@ -283,13 +319,14 @@ export const books: BookMonth[] = [
     isbn: "9781250209764",
     pickupDate: "28/08/2026",
     returnDate: "09/10/2026",
-    meetingDate: getLastSaturday(2026, 7),
+    meetingDate: getLastSaturday(2026, 8),
     meetingDateConfirmed: false,
     meetingVenue: "TBD",
     meetingVenueConfirmed: false,
     links: {
       audible: "https://www.audible.com/pd/American-Dirt-Oprahs-Book-Club-Audiobook/1250260604",
       bookshop: "https://bookshop.org/p/books/american-dirt-jeanine-cummins/18479562?ean=9781250209764",
+      spotify: "https://open.spotify.com/show/4czFVRkY8OWy5OkGXVcsbg",
     },
     spanish: {
       available: true,
@@ -298,8 +335,8 @@ export const books: BookMonth[] = [
     },
   },
   {
-    month: "September",
-    monthIndex: 8,
+    month: "October",
+    monthIndex: 9,
     title: "Hamnet",
     author: "Maggie O'Farrell",
     authorBio:
@@ -311,7 +348,7 @@ export const books: BookMonth[] = [
     isbn: "9781472223791",
     pickupDate: "25/09/2026",
     returnDate: "06/11/2026",
-    meetingDate: getLastSaturday(2026, 8),
+    meetingDate: getLastSaturday(2026, 9),
     meetingDateConfirmed: false,
     meetingVenue: "TBD",
     meetingVenueConfirmed: false,
@@ -320,6 +357,7 @@ export const books: BookMonth[] = [
       kindle: "https://www.amazon.com/Hamnet-Maggie-OFarrell-ebook/dp/B07ZN51NL3",
       audible: "https://www.audible.com/pd/Hamnet-Audiobook/0593212142",
       bookshop: "https://bookshop.org/p/books/hamnet-maggie-o-farrell/d8af232bf0b72169",
+      spotify: "https://open.spotify.com/show/2aa1OqdCyQmyTLcEC761bz",
     },
     spanish: {
       available: true,
@@ -330,8 +368,8 @@ export const books: BookMonth[] = [
     },
   },
   {
-    month: "October",
-    monthIndex: 9,
+    month: "November",
+    monthIndex: 10,
     title: "The Wind Knows My Name",
     author: "Isabel Allende",
     authorBio:
@@ -343,7 +381,7 @@ export const books: BookMonth[] = [
     isbn: "9780593598122",
     pickupDate: "30/10/2026",
     returnDate: "11/12/2026",
-    meetingDate: getLastSaturday(2026, 9),
+    meetingDate: getLastSaturday(2026, 10),
     meetingDateConfirmed: false,
     meetingVenue: "TBD",
     meetingVenueConfirmed: false,
@@ -351,6 +389,7 @@ export const books: BookMonth[] = [
       amazon: "https://www.amazon.com/Wind-Knows-My-Name-Novel/dp/0593598121",
       audible: "https://www.audible.com/pd/The-Wind-Knows-My-Name-A-Novel-Audiobook/B0BJ5XG4BQ",
       bookshop: "https://bookshop.org/p/books/the-wind-knows-my-name-isabel-allende/18973949?ean=9780593598108",
+      spotify: "https://open.spotify.com/show/44vni3erBn2E67SYdhj7SI",
     },
     spanish: {
       available: true,
@@ -360,42 +399,23 @@ export const books: BookMonth[] = [
     },
   },
   {
-    month: "November",
-    monthIndex: 10,
+    month: "December",
+    monthIndex: 11,
     title: "TBA",
     author: "TBA",
     authorBio: "",
-    blurb: "The November book selection has not yet been announced. Check back soon!",
+    blurb: "The December book selection has not yet been announced. Check back soon!",
     coverUrl: "",
     isbn: "",
     pickupDate: "27/11/2026",
     returnDate: "08/01/2027",
-    meetingDate: getLastSaturday(2026, 10),
+    meetingDate: getLastSaturday(2026, 11),
     meetingDateConfirmed: false,
     meetingVenue: "TBD",
     meetingVenueConfirmed: false,
     links: {},
     spanish: { available: false },
     isTBA: true,
-  },
-  {
-    month: "December",
-    monthIndex: 11,
-    title: "",
-    author: "",
-    authorBio: "",
-    blurb: "",
-    coverUrl: "",
-    isbn: "",
-    pickupDate: "",
-    returnDate: "",
-    meetingDate: "",
-    meetingDateConfirmed: false,
-    meetingVenue: "",
-    meetingVenueConfirmed: false,
-    links: {},
-    spanish: { available: false },
-    isNoMeeting: true,
   },
 ];
 
