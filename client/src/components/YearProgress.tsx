@@ -2,6 +2,7 @@
  * YearProgress — Book Club 2026
  * Horizontal progress bar showing the year's reading journey.
  * Completed months filled in forest green, current in amber, upcoming in muted.
+ * TBA months shown with dashed outline.
  */
 
 import { BookMonth, getBookStatus } from "@/data/books";
@@ -13,7 +14,7 @@ interface Props {
 
 export function YearProgress({ books }: Props) {
   const completedCount = books.filter((b) => getBookStatus(b) === "completed").length;
-  const totalBooks = books.filter((b) => !b.isNoMeeting && !b.isTBA).length;
+  const totalBooks = books.filter((b) => !b.isTBA).length;
   const progress = totalBooks > 0 ? (completedCount / totalBooks) * 100 : 0;
 
   return (
@@ -53,12 +54,14 @@ export function YearProgress({ books }: Props) {
         <div className="flex justify-between mt-4">
           {books.map((book) => {
             const status = getBookStatus(book);
-            const dotColor =
-              status === "completed"
-                ? "#2D4A3E"
-                : status === "current"
-                ? "#D4A853"
-                : "#C4B99A";
+            const isTBA = book.isTBA;
+            const dotColor = isTBA
+              ? "transparent"
+              : status === "completed"
+              ? "#2D4A3E"
+              : status === "current"
+              ? "#D4A853"
+              : "#C4B99A";
             const textColor =
               status === "current" ? "#2D4A3E" : "#8B7E70";
 
@@ -69,6 +72,7 @@ export function YearProgress({ books }: Props) {
                   style={{
                     backgroundColor: dotColor,
                     boxShadow: status === "current" ? "0 0 0 3px rgba(212,168,83,0.3)" : "none",
+                    border: isTBA ? "2px dashed #C4B99A" : "none",
                   }}
                 />
                 <span
@@ -76,6 +80,7 @@ export function YearProgress({ books }: Props) {
                   style={{
                     color: textColor,
                     fontWeight: status === "current" ? 600 : 400,
+                    fontStyle: isTBA ? "italic" : "normal",
                   }}
                 >
                   {book.month.slice(0, 3)}

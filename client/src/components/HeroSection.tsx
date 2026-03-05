@@ -52,9 +52,9 @@ export function HeroSection() {
             className="font-body text-lg sm:text-xl max-w-xl mx-auto leading-relaxed"
             style={{ color: "rgba(245,240,232,0.85)" }}
           >
-            Ten carefully chosen books. Monthly gatherings.
+            Twelve months of carefully chosen books.
             <br className="hidden sm:block" />
-            One chapter at a time, together.
+            Monthly gatherings. One chapter at a time, together.
           </p>
         </motion.div>
 

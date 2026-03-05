@@ -2,6 +2,7 @@
  * Home Page — Book Club 2026
  * Design: "The Reading Room" — Arts & Crafts / Bookish Warmth
  * Warm parchment, forest green, burnt sienna. Editorial scroll layout.
+ * Current book displayed prominently at top without scrolling.
  */
 
 import { useEffect, useRef, useState } from "react";
@@ -10,24 +11,30 @@ import { HeroSection } from "@/components/HeroSection";
 import { YearProgress } from "@/components/YearProgress";
 import { BookCard } from "@/components/BookCard";
 import { Footer } from "@/components/Footer";
-import { NextMeeting } from "@/components/NextMeeting";
+import { CurrentBookHero } from "@/components/CurrentBookHero";
 
 export default function Home() {
   const currentMonthIndex = getCurrentMonthIndex();
   const currentRef = useRef<HTMLDivElement>(null);
   const [hasScrolled, setHasScrolled] = useState(false);
 
-  // Find the current or next upcoming book
+  // Find the current or next upcoming book (not TBA)
   const currentBook = books.find(
-    (b) => !b.isNoMeeting && getBookStatus(b) === "current"
+    (b) => !b.isNoMeeting && !b.isTBA && getBookStatus(b) === "current"
   );
   const nextUpcoming = books.find(
     (b) => !b.isNoMeeting && !b.isTBA && getBookStatus(b) === "upcoming"
   );
   const highlightBook = currentBook || nextUpcoming;
 
-  // Active books (not December)
-  const activeBooks = books.filter((b) => !b.isNoMeeting);
+  // All books for the timeline (including TBA December)
+  const allBooks = books;
+
+  // Books for the timeline list (skip the current book since it's shown in hero)
+  const timelineBooks = books.filter((b) => {
+    if (highlightBook && b.monthIndex === highlightBook.monthIndex) return false;
+    return true;
+  });
 
   useEffect(() => {
     const handleScroll = () => {
@@ -64,6 +71,13 @@ export default function Home() {
           </a>
           <div className="hidden sm:flex items-center gap-6 text-sm">
             <a
+              href="#current-book"
+              className="transition-colors duration-500 no-underline"
+              style={{ color: hasScrolled ? "#2D4A3E" : "#F5F0E8" }}
+            >
+              Current
+            </a>
+            <a
               href="#progress"
               className="transition-colors duration-500 no-underline"
               style={{ color: hasScrolled ? "#2D4A3E" : "#F5F0E8" }}
@@ -75,7 +89,7 @@ export default function Home() {
               className="transition-colors duration-500 no-underline"
               style={{ color: hasScrolled ? "#2D4A3E" : "#F5F0E8" }}
             >
-              Books
+              All Books
             </a>
           </div>
         </div>
@@ -86,12 +100,16 @@ export default function Home() {
         <HeroSection />
       </div>
 
-      {/* Next Meeting Countdown */}
-      {highlightBook && <NextMeeting book={highlightBook} />}
+      {/* Current Book — prominently displayed */}
+      {highlightBook && (
+        <div id="current-book">
+          <CurrentBookHero book={highlightBook} />
+        </div>
+      )}
 
       {/* Year Progress */}
       <div id="progress">
-        <YearProgress books={activeBooks} />
+        <YearProgress books={allBooks} />
       </div>
 
       {/* Divider */}
@@ -113,7 +131,7 @@ export default function Home() {
           Our Reading List
         </h2>
         <p className="text-center font-body text-base mb-12" style={{ color: "#6B5E50" }}>
-          Twelve months, ten books, one shared journey
+          Twelve months of shared stories
         </p>
 
         <div className="relative">
@@ -123,7 +141,7 @@ export default function Home() {
             style={{ backgroundColor: "#C4B99A" }}
           />
 
-          {activeBooks.map((book, index) => (
+          {timelineBooks.map((book, index) => (
             <div
               key={book.month}
               ref={book.monthIndex === currentMonthIndex ? currentRef : undefined}
@@ -133,21 +151,6 @@ export default function Home() {
           ))}
         </div>
       </section>
-
-      {/* December note */}
-      <div className="container pb-8">
-        <div
-          className="text-center py-8 px-6 rounded-lg"
-          style={{ backgroundColor: "#EDE8DD" }}
-        >
-          <p className="font-display text-xl italic" style={{ color: "#6B5E50" }}>
-            December — No meeting. Happy holidays!
-          </p>
-          <p className="font-body text-sm mt-2" style={{ color: "#8B7E70" }}>
-            Enjoy the festive season and we'll see you in the new year.
-          </p>
-        </div>
-      </div>
 
       <Footer />
     </div>
