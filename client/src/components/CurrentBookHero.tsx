@@ -53,7 +53,7 @@ export function CurrentBookHero({ book }: Props) {
               className="font-ui text-xs tracking-[0.2em] uppercase"
               style={{ color: "rgba(245,240,232,0.6)" }}
             >
-              Currently Reading — {book.month}
+              Now Reading — {book.month}
             </span>
           </div>
           <div className="flex items-center gap-2">

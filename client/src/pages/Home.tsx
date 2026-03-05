@@ -1,8 +1,9 @@
 /*
- * Home Page — Book Club 2026
+ * Home Page — Dead Tree Word Club 2026
  * Design: "The Reading Room" — Arts & Crafts / Bookish Warmth
  * Warm parchment, forest green, burnt sienna. Editorial scroll layout.
  * Current book displayed prominently at top without scrolling.
+ * Current month also appears in the full timeline for visual clarity.
  */
 
 import { useEffect, useRef, useState } from "react";
@@ -27,14 +28,8 @@ export default function Home() {
   );
   const highlightBook = currentBook || nextUpcoming;
 
-  // All books for the timeline (including TBA December)
+  // All books for the progress bar and timeline
   const allBooks = books;
-
-  // Books for the timeline list (skip the current book since it's shown in hero)
-  const timelineBooks = books.filter((b) => {
-    if (highlightBook && b.monthIndex === highlightBook.monthIndex) return false;
-    return true;
-  });
 
   useEffect(() => {
     const handleScroll = () => {
@@ -66,7 +61,7 @@ export default function Home() {
               className="font-display text-lg font-semibold tracking-wide transition-colors duration-500"
               style={{ color: hasScrolled ? "#2D4A3E" : "#F5F0E8" }}
             >
-              Book Club 2026
+              Dead Tree Word Club
             </span>
           </a>
           <div className="hidden sm:flex items-center gap-6 text-sm">
@@ -122,7 +117,7 @@ export default function Home() {
         />
       </div>
 
-      {/* Book List */}
+      {/* Book List — all months including current */}
       <section id="books" className="container pb-16">
         <h2
           className="font-display text-3xl sm:text-4xl font-bold text-center mb-2"
@@ -141,7 +136,7 @@ export default function Home() {
             style={{ backgroundColor: "#C4B99A" }}
           />
 
-          {timelineBooks.map((book, index) => (
+          {allBooks.map((book, index) => (
             <div
               key={book.month}
               ref={book.monthIndex === currentMonthIndex ? currentRef : undefined}
