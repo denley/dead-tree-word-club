@@ -44,9 +44,9 @@ export function HeroSection() {
             className="font-display text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight mb-4"
             style={{ color: "#F5F0E8" }}
           >
-            Book Club
+            Dead Tree
             <br />
-            <span style={{ color: "#D4A853" }}>2026</span>
+            <span style={{ color: "#D4A853" }}>Word Club</span>
           </h1>
           <p
             className="font-body text-lg sm:text-xl max-w-xl mx-auto leading-relaxed"

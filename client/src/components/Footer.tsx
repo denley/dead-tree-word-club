@@ -30,7 +30,7 @@ export function Footer() {
             className="font-display text-lg font-semibold"
             style={{ color: "#F5F0E8" }}
           >
-            Book Club 2026
+            Dead Tree Word Club
           </span>
         </div>
         <p
