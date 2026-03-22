@@ -20,6 +20,7 @@ export interface BookMonth {
   meetingDateConfirmed: boolean;
   meetingVenue: string;
   meetingVenueConfirmed: boolean;
+  meetingTime?: string; // e.g. "10:00am – 12:30pm"
   links: {
     amazon?: string;
     kindle?: string;
@@ -135,8 +136,9 @@ export const books: BookMonth[] = [
     isbn: "9780802163622",
     pickupDate: "27/02/2026",
     returnDate: "10/04/2026",
-    meetingDate: getLastSaturday(2026, 2),
-    meetingDateConfirmed: false,
+    meetingDate: "29/03/2026",
+    meetingDateConfirmed: true,
+    meetingTime: "10:00am – 12:30pm",
     meetingVenue: "TBD",
     meetingVenueConfirmed: false,
     links: {

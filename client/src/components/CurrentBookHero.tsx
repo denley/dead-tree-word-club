@@ -151,7 +151,12 @@ export function CurrentBookHero({ book }: Props) {
                     <Calendar size={15} style={{ color: "#2D4A3E" }} />
                     <span className="font-medium">Meeting:</span>
                     {book.meetingDateConfirmed ? (
-                      <span className="font-medium">{formatDateDisplay(book.meetingDate)}</span>
+                      <span className="font-medium">
+                        {formatDateDisplay(book.meetingDate)}
+                        {book.meetingTime && (
+                          <span className="ml-1">{book.meetingTime}</span>
+                        )}
+                      </span>
                     ) : (
                       <span className="italic">
                         {formatDateDisplay(book.meetingDate)}

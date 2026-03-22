@@ -193,7 +193,12 @@ export function BookCard({ book, index }: Props) {
                       <Calendar size={14} style={{ color: "#2D4A3E" }} />
                       <span className="font-medium">Meeting:</span>
                       {book.meetingDateConfirmed ? (
-                        <span>{formatDateDisplay(book.meetingDate)}</span>
+                        <span>
+                          {formatDateDisplay(book.meetingDate)}
+                          {book.meetingTime && (
+                            <span className="ml-1">{book.meetingTime}</span>
+                          )}
+                        </span>
                       ) : (
                         <span className="italic">
                           {formatDateDisplay(book.meetingDate)}

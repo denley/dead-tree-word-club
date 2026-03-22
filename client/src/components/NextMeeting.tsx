@@ -88,7 +88,12 @@ export function NextMeeting({ book }: Props) {
                 <span className="flex items-center gap-1.5">
                   <Calendar size={14} />
                   {book.meetingDateConfirmed ? (
-                    formatDateDisplay(book.meetingDate)
+                    <span>
+                      {formatDateDisplay(book.meetingDate)}
+                      {book.meetingTime && (
+                        <span className="ml-1">{book.meetingTime}</span>
+                      )}
+                    </span>
                   ) : (
                     <span className="italic">
                       {formatDateDisplay(book.meetingDate)}
