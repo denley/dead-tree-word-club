@@ -139,8 +139,8 @@ export const books: BookMonth[] = [
     meetingDate: "29/03/2026",
     meetingDateConfirmed: true,
     meetingTime: "10:00am – 12:30pm",
-    meetingVenue: "TBD",
-    meetingVenueConfirmed: false,
+    meetingVenue: "Mia and Shaun's House",
+    meetingVenueConfirmed: true,
     links: {
       amazon: "https://www.amazon.com.au/s?k=Orbital+Samantha+Harvey",
       kindle: "https://www.amazon.com.au/s?k=Orbital+Samantha+Harvey&i=digital-text",
