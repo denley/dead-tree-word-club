@@ -202,7 +202,7 @@ export const books: BookMonth[] = [
     isbn: "9780812981933",
     pickupDate: "24/04/2026",
     returnDate: "05/06/2026",
-    meetingDate: getLastSaturday(2026, 4),
+    meetingDate: "08/06/2026",
     meetingDateConfirmed: false,
     meetingVenue: "TBD",
     meetingVenueConfirmed: false,
