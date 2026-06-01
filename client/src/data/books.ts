@@ -203,9 +203,10 @@ export const books: BookMonth[] = [
     pickupDate: "24/04/2026",
     returnDate: "05/06/2026",
     meetingDate: "08/06/2026",
-    meetingDateConfirmed: false,
-    meetingVenue: "TBD",
-    meetingVenueConfirmed: false,
+    meetingDateConfirmed: true,
+    meetingTime: "10:00am",
+    meetingVenue: "Jo & Andrew's House",
+    meetingVenueConfirmed: true,
     links: {
       amazon: "https://www.amazon.com.au/s?k=Apeirogon+Colum+McCann",
       kindle: "https://www.amazon.com.au/s?k=Apeirogon+Colum+McCann&i=digital-text",
