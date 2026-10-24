@@ -6,8 +6,8 @@ year. A static single page (Vite + React + Tailwind), no backend.
 - Public: https://denley.github.io/dead-tree-word-club/ (GitHub Pages, deployed by
   `.github/workflows/deploy.yml` on every push to `main`). This is the link to share with the club.
 - Home server (tailnet only): https://bookclub.denley.me/ and
-  https://homebox.jaguar-munsell.ts.net/bookclub/. A timer there redeploys within 15 minutes of a
-  push to `main`; details in `~/server/dead-tree-word-club/AGENTS.md` on homebox.
+  https://homebox.jaguar-munsell.ts.net/bookclub/. Not automatic: after pushing to `main`, run
+  `~/server/dead-tree-word-club/deploy.sh` on homebox (details in the `AGENTS.md` beside it).
 
 ## Updating the club's details
 
@@ -26,7 +26,8 @@ Everything lives in `client/src/data/club.ts` (types and field notes in `data/ty
   cover per book as `client/public/covers/<slug>.jpg` (portrait, ~600px wide), then run
   `scripts/cover-info.sh` to refresh `client/src/data/covers.json` (size + glow colour). A book
   with no cover gets a drawn cloth cover automatically.
-- Then `pnpm test` (it checks the calendar is in order and complete) and push to `main`.
+- Then `pnpm test` (it checks the calendar is in order and complete), push to `main`, and run
+  `~/server/dead-tree-word-club/deploy.sh` on homebox to update its copy.
 
 ## How "now reading" is worked out (`client/src/lib/schedule.ts`)
 
