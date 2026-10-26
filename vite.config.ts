@@ -28,7 +28,7 @@ function meetingsCalendar(): Plugin {
 
 export default defineConfig({
   // Relative asset URLs: the same build works at the root of a host
-  // (bookclub.denley.me) and under a sub-path (GitHub Pages).
+  // and under a sub-path (GitHub Pages).
   base: "./",
   plugins: [react(), tailwindcss(), meetingsCalendar()],
   resolve: {
