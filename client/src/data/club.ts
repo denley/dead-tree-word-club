@@ -29,6 +29,7 @@ export const calendar: ClubMonth[] = [
         "J.P. Pomare is a New Zealand author living in Melbourne, best known for In the Clearing (adapted as Disney's The Clearing) and The Last Guests.",
       blurb:
         "The slaughter of the wealthy Primrose family as they slept shocked New Zealand and scarred the small town of Cambridge forever. Everything pointed to their young live-in chef, Bill Ruatara, who was swiftly convicted. Seventeen years later, prison psychologist TK Phillips is fighting for an appeal, convinced Bill never had a fair trial. When true-crime podcaster Sloane Abbott takes an interest, she uncovers new evidence that could blow the prosecution's case apart.",
+      library: {},
     },
   },
   {
@@ -47,6 +48,10 @@ export const calendar: ClubMonth[] = [
         "Pip Williams was born in London, grew up in Sydney and now calls the Adelaide Hills home. She is the bestselling author of The Dictionary of Lost Words.",
       blurb:
         "Oxford, 1914. As the war draws young men away, twin sisters Peggy and Maude live on a narrowboat and work in the bindery at the University Press, folding the books Peggy longs to read. As war and illness reshape her world, Peggy begins to imagine another future, one with a place for her at the university across the road, but her love for a Belgian soldier and her duty to Maude threaten to hold her back.",
+      library: {
+        libby: { ebook: "9815306" },
+        borrowbox: { ebook: "AFP_4676735", audiobook: "BOL_4553552" },
+      },
       spanish: { title: "La artesana de libros" },
     },
   },
@@ -72,6 +77,10 @@ export const calendar: ClubMonth[] = [
         "Samantha Harvey lives in Bath and is the author of five novels and a work of non-fiction. Orbital won the 2024 Booker Prize.",
       blurb:
         "One day aboard the International Space Station: six astronauts from five countries, sixteen sunrises and sixteen sunsets as they circle the planet. They eat, sleep, run experiments and gaze down at a world they can see whole but cannot touch. A slender, contemplative novel about time, home and the fragile beauty of Earth, and a moving elegy to our humanity and our planet.",
+      library: {
+        libby: { audiobook: "10156506", ebook: "10188759" },
+        borrowbox: { ebook: "RDH_5414156", audiobook: "PRH_5414090" },
+      },
       spanish: { title: "Orbital" },
     },
   },
@@ -93,6 +102,10 @@ export const calendar: ClubMonth[] = [
         "Trent Dalton is a two-time Walkley Award-winning journalist and the bestselling author of Boy Swallows Universe and All Our Shimmering Skies.",
       blurb:
         "A girl and her mother have been on the run for sixteen years, from the monster they left in their kitchen with a knife in his throat. Home is a van with four flat tyres in a junkyard by the Brisbane River. The girl has no name, because names are dangerous when you're running, but she has a dream of a life as an artist. And when her mother can no longer protect her, there's only one person who can help: Lola.",
+      library: {
+        libby: { ebook: "9892494" },
+        borrowbox: { ebook: "HCP_4945144", audiobook: "BOL_4994114" },
+      },
       spanish: { title: "Lola en el espejo" },
     },
   },
@@ -116,6 +129,10 @@ export const calendar: ClubMonth[] = [
         "Colum McCann is the Dublin-born author of thirteen books, including Let the Great World Spin, winner of the U.S. National Book Award.",
       blurb:
         "Bassam Aramin is Palestinian. Rami Elhanan is Israeli. Rami's thirteen-year-old daughter is killed by a suicide bomber; a decade later Bassam's ten-year-old daughter is killed by a rubber bullet. When the two fathers hear each other's stories they recognise the loss that binds them, and together they set out to use their grief as a weapon for peace. Told in 1,001 fragments, a novel built from real lives.",
+      library: {
+        libby: { ebook: "5041106" },
+        borrowbox: { ebook: "BLM_748732" },
+      },
       spanish: { title: "Apeirógono" },
     },
   },
@@ -139,6 +156,10 @@ export const calendar: ClubMonth[] = [
         "Markus Zusak was born in Sydney in 1975 and is the author of The Book Thief, one of the most beloved novels of our time.",
       blurb:
         "A funny, poignant and disarmingly honest memoir of the three troublesome rescue dogs who turned the Zusak household upside down: about the chaos and heartbreak they brought, the vet bills and the bites, and the stubborn, unruly love that made even the most incorrigible animals family.",
+      library: {
+        libby: { ebook: "10750244" },
+        borrowbox: { audiobook: "BOL_5948324" },
+      },
       spanish: { title: "Tres perros salvajes" },
     },
   },
@@ -156,6 +177,10 @@ export const calendar: ClubMonth[] = [
         "Dylin Hardcastle (they/them) is an award-winning author, artist, screenwriter and scholar from Newcastle, New South Wales.",
       blurb:
         "Newcastle, 1972. On a quiet summer night two teenage girls, best friends, face a choice: act on what they feel for each other, or bury it. Over three decades their lives almost touch at pivotal moments, against the backdrop of Australia's first Mardi Gras and the AIDS crisis. A tender, sweeping story of first love and the different shapes a life can take.",
+      library: {
+        libby: { ebook: "10625642" },
+        borrowbox: { audiobook: "BOL_5684758" },
+      },
     },
   },
   {
@@ -173,6 +198,10 @@ export const calendar: ClubMonth[] = [
         "Robbie Arnott was born in Launceston, Tasmania in 1989 and lives in Hobart. Limberlost won the 2023 ARA Historical Novel Prize.",
       blurb:
         "Ned West spends his summer holidays trapping rabbits along the river below his family's orchard in northern Tasmania, saving for a small boat while his two older brothers are away at war. Moving between that summer and the long life that follows, Limberlost is a story about love and loss, the land and its history, and what we take from it and give back.",
+      library: {
+        libby: { ebook: "8994435", audiobook: "9127297" },
+        borrowbox: { ebook: "TXT_3946063" },
+      },
       spanish: { title: "Limberlost" },
     },
   },
@@ -191,6 +220,7 @@ export const calendar: ClubMonth[] = [
         "Jeanine Cummins is the author of four books. American Dirt was an Oprah's Book Club pick and has been translated into more than thirty languages.",
       blurb:
         "Lydia runs a bookshop in Acapulco and lives a comfortable life with her journalist husband and their son, Luca. Then her husband publishes a profile of the city's newest cartel boss, and in a single afternoon everything is gone. Forced to flee with Luca, Lydia joins the countless people travelling north towards the United States, and soon sees that everyone on the road is running from something.",
+      library: {},
       spanish: { title: "Tierra americana" },
     },
   },
@@ -209,6 +239,7 @@ export const calendar: ClubMonth[] = [
         "Maggie O'Farrell was born in Northern Ireland in 1972. She is the author of nine novels and a memoir; Hamnet won the Women's Prize for Fiction.",
       blurb:
         "Warwickshire in the 1580s. Agnes, a woman with an uncanny gift for healing, marries a young Latin tutor and settles in Henley Street, Stratford, where they raise three children while he works in London. In 1596 their son Hamnet dies, aged eleven. A few years later his father writes a play called Hamlet. A luminous portrait of a marriage and of a family undone by grief.",
+      library: {},
       spanish: { title: "Hamnet" },
     },
   },
@@ -227,7 +258,14 @@ export const calendar: ClubMonth[] = [
         "Isabel Allende is one of the most widely read authors in the world, with more than 80 million books sold, from The House of the Spirits onwards.",
       blurb:
         "Vienna, 1938: five-year-old Samuel Adler's father vanishes on Kristallnacht, and his mother puts him on a Kindertransport to England. Arizona, 2019: seven-year-old Anita Díaz is separated from her mother at the US border after they flee El Salvador. Moving between past and present, Allende traces the long reach of war and displacement, and the sacrifices parents make for their children.",
-      spanish: { title: "El viento conoce mi nombre" },
+      library: {
+        libby: { ebook: "9554021", audiobook: "9807093" },
+        borrowbox: { ebook: "BLM_4740036" },
+      },
+      spanish: {
+        title: "El viento conoce mi nombre",
+        library: { print: true },
+      },
     },
   },
   {
@@ -261,6 +299,7 @@ export const calendar: ClubMonth[] = [
         audible: "https://www.audible.com.au/pd/Frankie-Audiobook/B0CYCSNM5D",
         spotify: "https://open.spotify.com/show/5PAKwTbSssjmzJ0JoIuBka",
       },
+      library: {},
     },
   },
   {
@@ -284,6 +323,10 @@ export const calendar: ClubMonth[] = [
           "https://www.audible.com.au/pd/The-Butterfly-Women-Audiobook/B0F4Z9FCJW",
         spotify: "https://open.spotify.com/show/0d4Z0FoQnG8Xiz1ml3iuG5",
       },
+      library: {
+        libby: { ebook: "11640554", audiobook: "11878650" },
+        borrowbox: { ebook: "SSI_6694053" },
+      },
     },
   },
   {
@@ -306,6 +349,10 @@ export const calendar: ClubMonth[] = [
         audible:
           "https://www.audible.com.au/pd/The-Quiet-American-Audiobook/B0DWFZ98HW",
         spotify: "https://open.spotify.com/show/41PTPWjH9VlOkmfIu83PHz",
+      },
+      library: {
+        libby: { ebook: "466749" },
+        borrowbox: { audiobook: "BOL_233807" },
       },
       spanish: { title: "El americano tranquilo" },
     },
@@ -331,6 +378,7 @@ export const calendar: ClubMonth[] = [
           "https://www.audible.com.au/pd/Tiananmen-Square-Audiobook/B0CPB77N31",
         spotify: "https://open.spotify.com/show/1si4SfpZ7xF4VWjrrv3tJy",
       },
+      library: { libby: { ebook: "10189846" } },
       spanish: { title: "La estudiante de Tiananmén" },
     },
   },
@@ -354,6 +402,10 @@ export const calendar: ClubMonth[] = [
         audible:
           "https://www.audible.com.au/pd/The-Way-It-Is-Now-Audiobook/B09HHQRY3Z",
         spotify: "https://open.spotify.com/show/53szc9vD2uM5SI8c5JVmZ4",
+      },
+      library: {
+        libby: { ebook: "6370882", audiobook: "6887331" },
+        borrowbox: { ebook: "TXT_2127529" },
       },
     },
   },
@@ -385,6 +437,10 @@ export const calendar: ClubMonth[] = [
           "https://www.audible.com.au/pd/The-Glassmaker-Audiobook/B0D3W9WV6L",
         spotify: "https://open.spotify.com/show/4SyGUy8BFuhu2p0hnkeyLi",
       },
+      library: {
+        libby: { ebook: "11046320", audiobook: "11328432" },
+        borrowbox: { ebook: "HCU_5729109", audiobook: "BOL_5993996" },
+      },
       spanish: { title: "La maestra del vidrio" },
     },
   },
@@ -404,6 +460,7 @@ export const calendar: ClubMonth[] = [
         "Xinran is a Chinese-born British journalist and author whose late-night radio show in Nanjing invited women to share their stories. She moved to London in 1997 and is best known for The Good Women of China.",
       blurb:
         "In 1958 Shu Wen, a young Chinese doctor, learns that her new husband Kejun, an army doctor posted to Tibet, has been killed. She refuses to accept it and sets off into Tibet to find him. Lost in a vast and unfamiliar land, she is taken in by a nomad family and spends decades learning their language, faith and way of life. Years later she tells her story to the journalist Xinran. Spare and haunting, it is a love story and a meeting of two cultures, set in one of the most remote places on earth.",
+      library: {},
     },
   },
   {
@@ -422,6 +479,7 @@ export const calendar: ClubMonth[] = [
         "Sir David Attenborough, born in 1926, is a broadcaster and naturalist whose career began at the BBC in the 1950s with Zoo Quest. He went on to make Life on Earth, The Blue Planet and many other landmark natural history series.",
       blurb:
         "In the late 1950s and early 1960s, a young David Attenborough and a tiny BBC crew set off with heavy cameras and a lot of optimism to film places few viewers had ever seen. They search for birds of paradise in New Guinea, track lemurs and chameleons in Madagascar, visit Pacific islands, and travel through Arnhem Land in Australia's Northern Territory. Told with self-deprecating humour and real curiosity about the people they meet, it is a lively, old-fashioned travel adventure from the start of a remarkable career.",
+      library: {},
       spanish: { title: "Viajes al otro lado del mundo" },
     },
   },
@@ -445,6 +503,10 @@ export const calendar: ClubMonth[] = [
         audible: "https://www.audible.com.au/pd/Mythos-Audiobook/B071RLJWHG",
         spotify: "https://open.spotify.com/show/2STDvTDi2CzcPdzTymxVsx",
       },
+      library: {
+        libby: { audiobook: "3512899", ebook: "3588207" },
+        borrowbox: { audiobook: "PRH_654901", ebook: "PRU_469532" },
+      },
       spanish: { title: "Mythos" },
     },
   },
@@ -464,6 +526,7 @@ export const calendar: ClubMonth[] = [
         "Adele Lande is the pen name of Dr Ruth Baigent, a general practitioner and writer living in South Australia, who studied professional writing at the Adelaide College of the Arts. Opal Song is her first novel.",
       blurb:
         "Cari is a young Welsh doctor working in a big Australian hospital who finds it hard to read what other people really mean. She escapes her controlling partner Richard by taking a job in a remote opal-mining town in outback South Australia. There she joins Samson, a kind-hearted Indian surgeon, in a tiny medical team stretched by heat, isolation and eccentric locals. Then Richard turns up, with more than one reason to want her back in the city. Mixing medical drama, intrigue and dark humour, it is a homegrown story about finding your place.",
+      library: { libby: { ebook: "9150066" } },
     },
   },
   {

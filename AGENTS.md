@@ -26,6 +26,13 @@ Everything lives in `client/src/data/club.ts` (types and field notes in `data/ty
   cover per book as `client/public/covers/<slug>.jpg` (portrait, ~600px wide), then run
   `scripts/cover-info.sh` to refresh `client/src/data/covers.json` (size + glow colour). A book
   with no cover gets a drawn cloth cover automatically.
+- **Library copies** (also for a new year's list, or an own-book month's pick): run
+  `node scripts/library-check.mjs` (Node 23+) and paste each book's `library` value into it. It
+  looks the books up in the SA library network's Libby (`sapln`) and BorrowBox (`librariessa`),
+  English and Spanish, and gives each copy's id, so the site links straight to "Libby ebook",
+  "BorrowBox audiobook" and so on. A book without `library` gets search links instead. Spanish
+  print copies need checking by hand in the One Card catalogue (it blocks scripts): set
+  `spanish.library.print` where there is one. Re-run now and then; collections grow.
 - Then `pnpm test` (it checks the calendar is in order and complete), push to `main`, and update
   any other copy per `.agents/deployment.md`.
 
@@ -45,7 +52,7 @@ style links open a specific month.
 - `client/src/lib/ics.ts`: iCalendar output. `vite.config.ts` publishes `meetings.ics` (the
   subscribable feed in the footer) from the same data, and each upcoming meeting has an "Add to
   calendar" link.
-- `client/src/lib/links.ts`: store links. Search links by default; a book's `links` override
+- `client/src/lib/links.ts`: store and library links. Search links by default; a book's `links` override
   them only with direct links that have been checked.
 - All images are in the repo. Never hot-link covers from elsewhere: the original site's images
   were on a CDN that started returning 403, which is why every picture vanished.

@@ -11,7 +11,12 @@ import {
 } from "lucide-react";
 import type { ClubMonth, ISODate } from "@/data/types";
 import { buildCalendar } from "@/lib/ics";
-import { spanishLinks, storeLinks } from "@/lib/links";
+import {
+  libraryLinks,
+  spanishLibraryLinks,
+  spanishLinks,
+  storeLinks,
+} from "@/lib/links";
 import {
   daysBetween,
   formatDate,
@@ -384,13 +389,21 @@ function Links({ month }: { month: ClubMonth }) {
           <Pill key={l.key} href={l.url} label={l.label} />
         ))}
       </div>
+      <div className="flex flex-wrap items-center gap-2 font-ui text-sm">
+        <span className="mr-1 text-muted">
+          Borrow free with a library card:
+        </span>
+        {libraryLinks(book).map(l => (
+          <Pill key={l.url} href={l.url} label={l.label} small />
+        ))}
+      </div>
       {book.spanish && (
         <div className="flex flex-wrap items-center gap-2 font-ui text-sm">
           <span className="mr-1 text-muted">
             En español:{" "}
             <i className="font-body text-ink-soft">{book.spanish.title}</i>
           </span>
-          {spanishLinks(book).map(l => (
+          {[...spanishLinks(book), ...spanishLibraryLinks(book)].map(l => (
             <Pill key={l.url} href={l.url} label={l.label} small />
           ))}
         </div>

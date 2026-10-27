@@ -16,8 +16,26 @@ export interface Book {
    * Only add ones that have been checked to open the right book.
    */
   links?: Partial<Record<StoreKey, string>>;
-  /** The Spanish edition's title, if there is one (store links are generated from it). */
-  spanish?: { title: string };
+  /**
+   * Copies in the SA library network's apps, free with a library card: what
+   * `scripts/library-check.mjs` found. `{}` = checked, none there. Leave it out
+   * until checked: the site then shows search links instead.
+   */
+  library?: LibraryCopies;
+  /**
+   * The Spanish edition's title, if there is one (store links are generated from it),
+   * and any library copies of it (only those listed get a link).
+   */
+  spanish?: { title: string; library?: LibraryCopies };
+}
+
+export type LibraryFormat = "ebook" | "audiobook";
+
+/** Each app's title id per format; `print` = a print copy in the One Card catalogue. */
+export interface LibraryCopies {
+  libby?: Partial<Record<LibraryFormat, string>>;
+  borrowbox?: Partial<Record<LibraryFormat, string>>;
+  print?: boolean;
 }
 
 export type StoreKey =
