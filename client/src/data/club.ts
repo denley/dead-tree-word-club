@@ -229,6 +229,12 @@ export const calendar: ClubMonth[] = [
     month: 10,
     pickup: "2026-09-25",
     returnBy: "2026-11-06",
+    meeting: {
+      date: "2026-10-31",
+      start: "10:00",
+      end: "12:00",
+      venue: "Mia and Shaun's House",
+    },
     book: {
       slug: "hamnet",
       title: "Hamnet",
